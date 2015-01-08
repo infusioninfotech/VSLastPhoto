@@ -2,7 +2,7 @@ VSLastPhoto
 ============
 
 
-VSLastPhoto is a simple library that you can use to get the last photo from the Camera Roll. 
+VSLastPhoto is a simple wrapper class that you can use to get the last photo from the Camera Roll. 
 
 
 Installation

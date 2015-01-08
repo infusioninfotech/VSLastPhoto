@@ -13,5 +13,6 @@
 @interface VSLastPhoto : NSObject
 
 - (void)getLastPhoto:(CGSize)size completion:(void (^)(UIImage *image))completionBlock;
+- (void)getPermission;
 
 @end

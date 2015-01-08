@@ -32,4 +32,24 @@
     
 }
 
+- (void)getPermission {
+    
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        switch (status) {
+            case PHAuthorizationStatusAuthorized:
+                NSLog(@"authorized");
+                break;
+            case PHAuthorizationStatusRestricted:
+                NSLog(@"restricted");
+                break;
+            case PHAuthorizationStatusDenied:
+                NSLog(@"denied");
+                break;
+            default:
+                break;
+        }
+    }];
+    
+}
+
 @end
